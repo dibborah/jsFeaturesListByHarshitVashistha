@@ -1,32 +1,45 @@
- * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 2px solid red;
-    padding: 1rem;
-    margin: 1rem;
+body {
+  min-height: 100vh;
+  background-image: url(laptop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.menubar {
-    display: flex;
-    justify-content: space-around;
-}
- 
-a {
-    text-decoration: none;
-    color: black;
+
+nav {
+    background-color: white;
+    box-sizing: 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
 
-ul li {
-    list-style-type: none;
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li {
+  height: 50px;
 }
 
-.backgroungImage {
-    background-image: url('./laptop.jpg');
-};
+nav a {
+  height: 100%;
+  /* padding can be used to give space in between items */
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+nav a:hover {
+  background-color: #f0f0f0;
+}
