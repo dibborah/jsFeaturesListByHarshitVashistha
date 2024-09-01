@@ -22,6 +22,7 @@ body {
 
 .icon {
     margin-right: 1rem;
+    transition: transform 0.5s;
 }
 
 .icon.active {
@@ -32,11 +33,13 @@ body {
     color: #6e6b6b;
     max-height: 0;
     overflow: hidden;
+    transition: max-height 0.2s;
 }
 
-.answer.active {
+/* .answer.active {
     max-height: fit-content;
-}
+    max-height: 200px;
+} */
 
 /* .hideAnswer {
     display: none;
