@@ -51,9 +51,10 @@ window.addEventListener('scroll', () => {
     // console.log(document.documentElement.scrollHeight)
     // console.log(window.scrollY + window.innerHeight)
 
-    const windowTotal = Math.ceil(window.scrollY + window.innerHeight)
+    // const windowTotal = Math.ceil(window.scrollY + window.innerHeight)
+    const windowTotalRoundOff = window.scrollY + window.innerHeight + 1;
 
-    if(windowTotal >= document.documentElement.scrollHeight){
+    if(windowTotalRoundOff >= document.documentElement.scrollHeight){
         console.log('inside if');
         loadImages()
     }
