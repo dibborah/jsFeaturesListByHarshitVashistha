@@ -64,10 +64,21 @@ nav li:first-child {
   justify-content: flex-start;
 }
 
+.open {
+  display: flex;
+}
+
 .sidebar li {
   width: 100%;
 }
 
 .sidebar a {
   width: 100%;
+}
+
+@media(max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+
 }
