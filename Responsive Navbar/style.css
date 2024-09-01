@@ -1,0 +1,32 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid red;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.menubar {
+    display: flex;
+    justify-content: space-around;
+}
+ 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.backgroungImage {
+    background-image: url('./laptop.jpg');
+};
