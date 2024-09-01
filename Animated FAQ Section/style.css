@@ -9,8 +9,9 @@ body {
     background-color: white   ;
     padding: 4px 16px;
     margin-bottom: 15px;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     box-shadow: 1px 1px 5px rgb(255, 160, 255);
+    cursor: pointer;
 }
 
 .question {
@@ -25,4 +26,8 @@ body {
 
 .answer {
     color: #6e6b6b;
+}
+
+.hideAnswer {
+    display: none;
 }
