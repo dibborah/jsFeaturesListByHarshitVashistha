@@ -24,10 +24,20 @@ body {
     margin-right: 1rem;
 }
 
-.answer {
-    color: #6e6b6b;
+.icon.active {
+    transform: rotate(-180deg);
 }
 
-.hideAnswer {
-    display: none;
+.answer {
+    color: #6e6b6b;
+    max-height: 0;
+    overflow: hidden;
 }
+
+.answer.active {
+    max-height: fit-content;
+}
+
+/* .hideAnswer {
+    display: none;
+} */

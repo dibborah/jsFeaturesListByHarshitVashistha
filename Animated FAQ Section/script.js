@@ -1,9 +1,10 @@
 const accordians = document.querySelectorAll('.accordian');
 
-const answer = document.querySelectorAll('.answer');
-
-accordians.forEach((accordian, index) => {
-    accordian.addEventListener('click', (accordian) => {
-        answer[index].classList.toggle('hideAnswer');
+accordians.forEach((accordian) => {
+    const answer = accordian.querySelector('.answer');
+    const icon = accordian.querySelector('.icon');
+    accordian.addEventListener('click', () => {
+        answer.classList.toggle('active');
+        icon.classList.toggle('active');
     })
 })
