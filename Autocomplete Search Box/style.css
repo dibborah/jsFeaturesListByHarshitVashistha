@@ -86,6 +86,11 @@ button .fa-solid {
     padding: 15px 10px;
     cursor: pointer;
 }
+
 .result-box ul li:hover {
     background: #e9f3ff;
+}
+
+.hide {
+    display: none;
 }
