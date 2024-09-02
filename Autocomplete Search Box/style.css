@@ -94,3 +94,8 @@ button .fa-solid {
 .hide {
     display: none;
 }
+
+.result-box {
+    max-height:300px;
+    overflow-y: scroll;
+}
