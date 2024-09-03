@@ -22,6 +22,9 @@
         inset: 0;
         animation: plus 2.5s infinite;
       }
+      .blur_load.loaded::before {
+        content: none;
+      }
       @keyframes plus {
         0% {
             background-color: rgba(255, 255, 255, 0);
