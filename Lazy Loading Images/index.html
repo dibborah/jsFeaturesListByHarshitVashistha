@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      img {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        display: block;
+        object-position: center;
+        object-fit: cover;
+      }
+      .blur_load {
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
+  </head>
+  <body style="margin: 0">
+    <div class="grid">
+        <div class="blur_load" style="background-image: url(./img/small-image.png);">
+            <img src="./img/img_1.jpg" loading="lazy" />
+        </div>
+        <div class="blur_load" style="background-image: url(./img/small-image.png);">
+            <img src="./img/img_2.jpg" loading="lazy" />
+        </div>
+        <div class="blur_load" style="background-image: url(./img/small-image.png);">
+            <img src="./img/img_3.jpg" loading="lazy" />
+        </div>
+       <div class="blur_load" style="background-image: url(./img/small-image.png);">
+           <img src="./img/img_4.jpg" loading="lazy" />
+        </div>
+       <div class="blur_load" style="background-image: url(./img/small-image.png);">
+           <img src="./img/img_5.jpg" loading="lazy" />
+        </div>
+       <div class="blur_load" style="background-image: url(./img/small-image.png);">
+           <img src="./img/img_6.jpg" loading="lazy" />
+        </div>
+       <div class="blur_load" style="background-image: url(./img/small-image.png);">
+           <img src="./img/img_7.jpg" loading="lazy" />
+        </div>
+       <div class="blur_load" style="background-image: url(./img/small-image.png);">
+           <img src="./img/img_8.jpg" loading="lazy" />
+        </div>
+       <div class="blur_load" style="background-image: url(./img/small-image.png);">
+           <img src="./img/img_9.jpg" loading="lazy" />
+        </div>
+       <div class="blur_load" style="background-image: url(./img/small-image.png);">
+           <img src="./img/img_10.jpg" loading="lazy" />
+        </div>
+       <div class="blur_load" style="background-image: url(./img/small-image.png);">
+           <img src="./img/img_11.jpg" loading="lazy" />
+        </div>
+        <div class="blur_load" style="background-image: url(./img/small-image.png);">
+            <img src="./img/img_12.jpg" loading="lazy" />
+        </div>
+       <div class="blur_load" style="background-image: url(./img/small-image.png);">
+           <img src="./img/img_13.jpg" loading="lazy" />
+        </div>
+       <div class="blur_load" style="background-image: url(./img/small-image.png);">
+           <img src="./img/img_14.jpg" loading="lazy" />
+        </div>
+       <div class="blur_load" style="background-image: url(./img/small-image.png);">
+           <img src="./img/img_15.jpg" loading="lazy" />
+        </div>
+        <div class="blur_load" style="background-image: url(./img/small-image.png);">
+            <img src="./img/img_16.jpg" loading="lazy" />
+        </div>
+    </div>
+    <script>
+        const blurDivs = document.querySelectorAll('.blur_load')
+        blurDivs.forEach((div) => {
+            const img = document.querySelector('img');
+            function loaded() {
+                // show image
+            }
+            if(img.complete){
+                // if img.complete is true: i.e: the img is downloaded
+            }
+
+        })
+    </script>
+  </body>
+</html>
