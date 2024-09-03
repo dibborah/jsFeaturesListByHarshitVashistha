@@ -16,9 +16,34 @@
         object-position: center;
         object-fit: cover;
       }
+      .blur_load::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        animation: plus 2.5s infinite;
+      }
+      @keyframes plus {
+        0% {
+            background-color: rgba(255, 255, 255, 0);
+        }
+        50% {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        100% {
+            background-color: rgba(255, 255, 255, 0);
+        }
+      }
       .blur_load {
         background-size: cover;
         background-position: center;
+        position: relative;
+      }
+      .blur_load.loaded > img {
+        opacity: 1;
+      }
+      .blur_load > img {/* All the img tags inside .blur_load class */
+        opacity: 0;
+        transition: opacity 200ms ease-in-out;
       }
     </style>
   </head>
@@ -79,11 +104,16 @@
             const img = document.querySelector('img');
             function loaded() {
                 // show image
+                div.classList.add('loaded')
             }
             if(img.complete){
+                // This block will call the fc right away
                 // if img.complete is true: i.e: the img is downloaded
+                loaded();
+            } else {
+                // This block will load the fc loaded as soon as the img loads(in progress)
+                img.addEventListener('load', loaded);
             }
-
         })
     </script>
   </body>
