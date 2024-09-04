@@ -20,3 +20,20 @@
 // console.log('toDateString', myDate.toLocaleString());// with slash
 
 // console.log('type of Date constructor is:',typeof myDate);
+
+// Get custom date
+// let myNewDate = new Date();
+// Here month starts from 0 as it may be an array like object
+// 0 === Jan when passing separately not as string
+// let myArbitaryDate = new Date(2023, 3, 25);// Year, Month(which starts from zero), Date
+// console.log(myArbitaryDate);
+// console.log(myArbitaryDate.toDateString());
+// console.log(myArbitaryDate.toLocaleString());// to localString() is one of d most useFul date method
+// since using it gives us the date format which we usually write or use in our date to day life
+
+// More custom dates
+
+/// By in this hyphen case where we are passing a string months starts from 1
+// 1 === Jan 
+let myCreatedDate = new Date('2023-01-14');
+console.log(myCreatedDate.toLocaleString());
