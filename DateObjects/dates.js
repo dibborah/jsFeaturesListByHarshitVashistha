@@ -50,6 +50,13 @@
 
 let newDate = new Date();
 
-console.log(newDate.getMonth() + 1);
+// console.log(newDate.getMonth() + 1);
+
+const modifiedDate = newDate.toLocaleString('default', {
+    weekday: 'long',
+    // timeZone: ''
+});
+
+console.log(modifiedDate);
 
 
