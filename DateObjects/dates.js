@@ -25,7 +25,7 @@
 // let myNewDate = new Date();
 // Here month starts from 0 as it may be an array like object
 // 0 === Jan when passing separately not as string
-// let myArbitaryDate = new Date(2023, 3, 25);// Year, Month(which starts from zero), Date
+// let myArbitaryDate = new Date(2023, 3, 25, 5, 7, 45);// Year, Month(which starts from zero), Date, Hour, Min, Sec
 // console.log(myArbitaryDate);
 // console.log(myArbitaryDate.toDateString());
 // console.log(myArbitaryDate.toLocaleString());// to localString() is one of d most useFul date method
@@ -35,5 +35,21 @@
 
 /// By in this hyphen case where we are passing a string months starts from 1
 // 1 === Jan 
-let myCreatedDate = new Date('2023-01-14');
-console.log(myCreatedDate.toLocaleString());
+
+// let myCreatedDate = new Date('2023-01-14');
+// let myCreatedDate = new Date('01-14-2023');
+// console.log(myCreatedDate.toLocaleString());
+
+// const myTimeStamp1 = Date.now();// gives Date in ms
+// console.log(myTimeStamp1);
+// console.log(myCreatedDate.getTime());
+
+// console.log(Math.floor(Date.now() / 1000))
+
+// Note: Date.now gives us milliseconds ellapsed from 1970 Jan
+
+let newDate = new Date();
+
+console.log(newDate.getMonth() + 1);
+
+
